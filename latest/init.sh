@@ -10,7 +10,7 @@ if [ $ADSSETUP == "PRIMARY"]; then
     REALM="--realm=${REALM}"
     ADPASSWD="--adminpass=${ADPASSWD}"
     UPASSWD="--password=${UPASSWD}"
-    if [ HOST_IP != "na" ]; then
+    if [ $HOST_IP != "na" ]; then
         HOST_IP="--host-ip=${HOST_IP}"
     fi
 fi
